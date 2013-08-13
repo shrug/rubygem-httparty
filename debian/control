@@ -1,0 +1,16 @@
+Source: rubygem-httparty
+Section: ruby
+Priority: extra
+Maintainer: Rob Braden <bradejr@puppetlabs.com>
+Build-Depends: debhelper (>= 8.0.0), gem2deb
+Standards-Version: 3.9.3
+Homepage: https://github.com/jnunemaker/httparty
+#Vcs-Git: git://git.debian.org/collab-maint/httparty.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/httparty.git;a=summary
+XS-Ruby-Versions: all
+
+Package: rubygem-httparty
+Architecture: all
+XS-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, rubygem-multi-xml, ruby-multi-json, ruby | ruby-interpreter
+Description: Library for consuming RESTful web services
