@@ -60,7 +60,7 @@ find %{buildroot}%{geminstdir}/bin -type f | xargs chmod a+x
 
 %files
 %defattr(-, root, root, -)
-%dir %{geminstdir}
+%{geminstdir}
 %{_bindir}/httparty
 %{geminstdir}/bin
 %{geminstdir}/lib
